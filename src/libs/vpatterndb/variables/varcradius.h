@@ -62,6 +62,22 @@
 class VArc;
 class VEllipticalArc;
 
+/**
+ * @brief Class representing the radius of an arc.
+ * 
+ * The VArcRadius class extends the VCurveVariable class and provides functionality to manage and manipulate the radius of various types of arcs, including circular and elliptical arcs.
+ * 
+ * @details
+ * The VArcRadius class includes:
+ * - A default constructor.
+ * - A parameterized constructor that initializes the object with an arc and unit information.
+ * - A parameterized constructor that initializes the object with an elliptical arc, the number of radii, and unit information.
+ * - A copy constructor.
+ * - An assignment operator.
+ * - A destructor.
+ * 
+ * The class allows for creating and managing arc radius objects with unique identifiers and parent-child relationships.
+ */
 class VArcRadius :public VCurveVariable
 {
 public:

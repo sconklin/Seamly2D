@@ -60,6 +60,23 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_GCC("-Weffc++")
 QT_WARNING_DISABLE_GCC("-Wnon-virtual-dtor")
 
+/**
+ * @brief Data class for storing arc radius information.
+ * 
+ * This class encapsulates the data necessary for defining the radius of an arc.
+ * 
+ * @details
+ * The VArcRadiusData class includes:
+ * - arcId: A unique identifier for the arc.
+ * 
+ * @note
+ * The class also includes:
+ * - A default constructor.
+ * - A parameterized constructor that initializes the arcId.
+ * - A copy constructor.
+ * - A destructor.
+ * - An assignment operator that is deleted to prevent copying.
+ */
 class VArcRadiusData : public QSharedData
 {
 public:

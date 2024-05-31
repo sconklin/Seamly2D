@@ -72,7 +72,29 @@ class VContainer;
 class MeasurementVariableData;
 
 /**
- * @brief The MeasurementVariable class keep data row of multisize table
+ * @brief MeasurementVariable class for handling measurement-related variables.
+ * 
+ * This class inherits from VVariable and is designed to manage variables associated with measurements.
+ * It provides various constructors, methods for manipulation, and utilities for managing measurement data.
+ * 
+ * @details
+ * The MeasurementVariable class includes:
+ * - Parameterized constructors to initialize variables with specific data, index, name, base size, base height, and other attributes.
+ * - Copy constructor for creating a copy of an existing MeasurementVariable instance.
+ * - Destructor to clean up resources.
+ * - Assignment operator for copying the contents of another MeasurementVariable instance.
+ * - Move assignment operator for efficient transfer of resources from an rvalue instance.
+ * - Methods to swap two MeasurementVariable instances.
+ * - Methods to get and set various attributes like GUI text, tag name, formula, size, height, unit, base value, ksize, and kheight.
+ * - Methods to check the validity of formulas and custom attributes.
+ * - Methods to get and set values, including overrides for getting and setting values from VVariable.
+ * - Static methods to list heights and sizes based on provided maps and units, as well as validate gradation sizes and heights.
+ * - A private method to calculate the value.
+ * - A private static method to list values based on provided parameters.
+ * 
+ * Attributes:
+ * - QSharedDataPointer<MeasurementVariableData> d: Shared data pointer for managing the data associated with the measurement variable.
+ * 
  */
 class MeasurementVariable :public VVariable
 {

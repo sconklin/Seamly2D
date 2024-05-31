@@ -65,6 +65,32 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_GCC("-Weffc++")
 QT_WARNING_DISABLE_GCC("-Wnon-virtual-dtor")
 
+/**
+ * @brief Data class for storing measurement variables.
+ * 
+ * This class encapsulates the data necessary for defining measurement variables used in patternmaking systems. 
+ * It includes information about the base measurements, formula, and various coefficients used for size and height adjustments.
+ * 
+ * @details
+ * The MeasurementVariableData class includes:
+ * - data: A VContainer object that holds the data related to the measurement variable.
+ * - index: A unique identifier for the measurement variable.
+ * - formula: The formula associated with the measurement variable.
+ * - gui_text: The text displayed in the GUI for the measurement variable.
+ * - _tagName: A tag name associated with the measurement variable.
+ * - formulaOk: A boolean indicating if the formula is valid.
+ * - currentSize: A pointer to the current size value.
+ * - currentHeight: A pointer to the current height value.
+ * - currentUnit: A pointer to the current unit of measurement.
+ * - base: The base value in the base size and height.
+ * - ksize: The increment value for sizes.
+ * - kheight: The increment value for heights.
+ * - baseSize: The base size value.
+ * - baseHeight: The base height value.
+ * 
+ * @note
+ * The class also includes constructors for initializing the data, a copy constructor, and a destructor.
+ */
 class MeasurementVariableData : public QSharedData
 {
 public:

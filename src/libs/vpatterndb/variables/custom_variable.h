@@ -63,7 +63,25 @@ class CustomVariableData;
 class VContainer;
 
 /**
- * @brief The CustomVariable class keep data row of variables table
+ * @brief The CustomVariable class represents a custom variable with associated data, formula, and properties.
+ * 
+ * This class extends the VVariable class and includes additional attributes and methods specific to custom variables. 
+ * It manages a formula, an index, and other properties related to a custom measurement variable.
+ * 
+ * @details
+ * - Default constructor initializes an empty CustomVariable.
+ * - Parameterized constructor initializes a CustomVariable with specified data, name, index, base value, formula, status, and description.
+ * - Copy constructor initializes a CustomVariable by copying another CustomVariable.
+ * - Destructor cleans up any resources used by the CustomVariable.
+ * - Assignment operator assigns the values from another CustomVariable to this CustomVariable.
+ * - Move assignment operator moves the values from another CustomVariable to this CustomVariable without copying.
+ * - Swap method swaps the values of this CustomVariable with another CustomVariable.
+ * - getIndex() returns the index of the CustomVariable.
+ * - GetFormula() returns the formula associated with the CustomVariable.
+ * - IsFormulaOk() checks if the formula of the CustomVariable is valid.
+ * - GetData() returns the data container associated with the CustomVariable.
+ * 
+ * @note The class uses a shared data pointer for managing the CustomVariableData.
  */
 class CustomVariable :public VVariable
 {

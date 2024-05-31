@@ -63,6 +63,27 @@ class VSpline;
 
 enum class CurveAngle : char { StartAngle, EndAngle };
 
+/**
+ * @brief The VCurveAngle class represents an angle in a curve.
+ * 
+ * This class is derived from VCurveVariable and encapsulates the properties and methods related to curve angles.
+ * 
+ * @details
+ * - The class provides constructors for initializing curve angles based on various parameters.
+ * - It includes an assignment operator and a destructor.
+ * 
+ * Constructors:
+ * - VCurveAngle(): Default constructor.
+ * - VCurveAngle(const quint32 &id, const quint32 &parentId, const VAbstractCurve *curve, CurveAngle angle): Initializes a curve angle with an abstract curve.
+ * - VCurveAngle(const quint32 &id, const quint32 &parentId, const QString &baseCurveName, const VSpline &spl, CurveAngle angle, qint32 segment): Initializes a curve angle with a spline.
+ * - VCurveAngle(const VCurveAngle &var): Copy constructor.
+ * 
+ * Assignment operator:
+ * - VCurveAngle& operator=(const VCurveAngle &var): Assigns one VCurveAngle object to another.
+ * 
+ * Destructor:
+ * - virtual ~VCurveAngle() Q_DECL_OVERRIDE: Destructor.
+ */
 class VCurveAngle : public VCurveVariable
 {
 public:

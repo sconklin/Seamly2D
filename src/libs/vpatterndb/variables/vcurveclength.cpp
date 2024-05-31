@@ -60,14 +60,34 @@
 #include "../vgeometry/vspline.h"
 #include "vcurvevariable.h"
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Default constructor for VCurveCLength.
+ * 
+ * Initializes a VCurveCLength object by calling the base class constructor and setting the type to CurveCLength.
+ */
 VCurveCLength::VCurveCLength()
     : VCurveVariable()
 {
     SetType(VarType::CurveCLength);
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Constructor for VCurveCLength with specified parameters.
+ * 
+ * Initializes a VCurveCLength object using the provided parameters, including an ID, parent ID, a pointer to 
+ * a VAbstractBezier curve, a CurveCLength type, and a unit for pattern measurements. 
+ * 
+ * @param id The unique identifier for the curve length.
+ * @param parentId The identifier of the parent object.
+ * @param curve Pointer to the VAbstractBezier curve object.
+ * @param cType The type of curve length (C1 or C2).
+ * @param patternUnit The unit of measurement for the pattern.
+ * 
+ * @details
+ * This constructor sets the type to CurveCLength, asserts that the curve pointer is not null, and initializes the 
+ * value and name based on the provided curve length type (C1 or C2). The length is converted from pixels to the 
+ * specified pattern unit.
+ */
 VCurveCLength::VCurveCLength(const quint32 &id, const quint32 &parentId, const VAbstractBezier *curve,
                              CurveCLength cType, Unit patternUnit)
     : VCurveVariable(id, parentId)
@@ -86,7 +106,25 @@ VCurveCLength::VCurveCLength(const quint32 &id, const quint32 &parentId, const V
     }
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Constructor for VCurveCLength with specified parameters for a spline.
+ * 
+ * Initializes a VCurveCLength object using the provided parameters, including an ID, parent ID, base curve name, 
+ * a VSpline object, a CurveCLength type, a unit for pattern measurements, and a segment number.
+ * 
+ * @param id The unique identifier for the curve length.
+ * @param parentId The identifier of the parent object.
+ * @param baseCurveName The name of the base curve.
+ * @param spl The VSpline object.
+ * @param cType The type of curve length (C1 or C2).
+ * @param patternUnit The unit of measurement for the pattern.
+ * @param segment The segment number of the curve.
+ * 
+ * @details
+ * This constructor sets the type to CurveCLength and initializes the value and name based on the provided curve length 
+ * type (C1 or C2) for the spline. The length is converted from pixels to the specified pattern unit and the name 
+ * includes the segment number.
+ */
 VCurveCLength::VCurveCLength(const quint32 &id, const quint32 &parentId, const QString &baseCurveName,
                              const VSpline &spl, CurveCLength cType, Unit patternUnit, qint32 segment)
     : VCurveVariable(id, parentId)
@@ -104,13 +142,32 @@ VCurveCLength::VCurveCLength(const quint32 &id, const quint32 &parentId, const Q
     }
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Copy constructor for VCurveCLength.
+ * 
+ * Initializes a new instance of VCurveCLength by copying the data from an existing VCurveCLength object.
+ * 
+ * @param var The VCurveCLength object to copy from.
+ * 
+ * @details
+ * This constructor utilizes the copy constructor of the base class VCurveVariable to perform the copy operation.
+ */
 VCurveCLength::VCurveCLength(const VCurveCLength &var)
     : VCurveVariable(var)
 {
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Assignment operator for VCurveCLength.
+ * 
+ * Assigns the values from an existing VCurveCLength object to this object.
+ * 
+ * @param var The VCurveCLength object to assign from.
+ * @return A reference to this VCurveCLength object.
+ * 
+ * @details
+ * This operator checks for self-assignment and utilizes the assignment operator of the base class VCurveVariable to perform the assignment.
+ */
 VCurveCLength &VCurveCLength::operator=(const VCurveCLength &var)
 {
     if ( &var == this )

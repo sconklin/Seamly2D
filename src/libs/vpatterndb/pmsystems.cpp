@@ -114,6 +114,15 @@ const QString p54_S = QStringLiteral("p54");
 const QString p998_S = QStringLiteral("p998");
 
 //---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of patternmaking systems.
+ * 
+ * This function creates and returns a QStringList containing the names of various patternmaking systems. These names are 
+ * stored in variables like p0_S, p1_S, etc.
+ * 
+ * @return QStringList A list of patternmaking system names.
+ * 
+ */
 QStringList ListPMSystems()
 {
     QStringList list;
@@ -177,7 +186,23 @@ QStringList ListPMSystems()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Initializes the patternmaking systems in a combo box.
+ * 
+ * This function populates a QComboBox with a list of patternmaking systems, ensuring that the systems are displayed 
+ * alphabetically and a default option (blank field or 'None') is placed at the top of the list.
+ * 
+ * @param systemCombo Pointer to the QComboBox that will be populated with the patternmaking systems.
+ * 
+ * @details
+ * The function performs the following steps:
+ * - Retrieves a list of patternmaking systems using the ListPMSystems function.
+ * - Creates a QMap to store the translated names of the systems along with their original names.
+ * - Iterates through the list of systems, translating their names and inserting them into the QMap in the format "translatedName (originalName)".
+ * - Asserts that the systemCombo pointer is not null.
+ * - Adds the default option (blank field or 'None') to the top of the combo box.
+ * - Iterates through the QMap, adding each translated system name to the combo box in alphabetical order.
+ */
 void InitPMSystems(QComboBox *systemCombo)
 {
     const QStringList listSystems = ListPMSystems();

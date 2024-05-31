@@ -61,6 +61,27 @@
 
 class VCurveVariableData;
 
+/**
+ * @brief The VCurveVariable class represents a curve variable within a vector graphic system.
+ *
+ * This class provides methods to manage curve variables, including assignment, swapping, and filtering.
+ * It extends the VInternalVariable class and includes additional attributes specific to curve variables.
+ *
+ * @details
+ * The VCurveVariable class includes the following functionalities:
+ * - Default constructor.
+ * - Constructor with specific ID and parent ID.
+ * - Copy constructor.
+ * - Destructor.
+ * - Assignment operator.
+ * - Move assignment operator.
+ * - Swap function to exchange the contents of two VCurveVariable objects.
+ * - Filter function to apply a filter based on the provided ID.
+ * - Getter and setter for the ID of the curve variable.
+ * - Getter and setter for the parent ID of the curve variable.
+ *
+ * The class utilizes QSharedDataPointer for managing shared data.
+ */
 class VCurveVariable : public VInternalVariable
 {
 public:

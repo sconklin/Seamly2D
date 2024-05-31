@@ -60,14 +60,28 @@
 #include "../vgeometry/vspline.h"
 #include "vcurvevariable.h"
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Default constructor for VCurveAngle.
+ * 
+ * Initializes a VCurveAngle object by calling the base class constructor and setting the variable type to CurveAngle.
+ */
 VCurveAngle::VCurveAngle()
     :VCurveVariable()
 {
     SetType(VarType::CurveAngle);
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Constructor for VCurveAngle with curve information.
+ * 
+ * Initializes a VCurveAngle object by setting its type to CurveAngle, asserting the curve is not null,
+ * and setting the value and name based on the specified CurveAngle (StartAngle or EndAngle).
+ * 
+ * @param id The unique identifier for the VCurveAngle.
+ * @param parentId The parent identifier for the VCurveAngle.
+ * @param curve A pointer to the VAbstractCurve object.
+ * @param angle The angle type (StartAngle or EndAngle).
+ */
 VCurveAngle::VCurveAngle(const quint32 &id, const quint32 &parentId, const VAbstractCurve *curve, CurveAngle angle)
     :VCurveVariable(id, parentId)
 {
@@ -85,7 +99,19 @@ VCurveAngle::VCurveAngle(const quint32 &id, const quint32 &parentId, const VAbst
     }
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Constructor for VCurveAngle with spline information.
+ * 
+ * Initializes a VCurveAngle object by setting its type to CurveAngle and setting the value and name based on 
+ * the specified CurveAngle (StartAngle or EndAngle) for a given segment of a VSpline.
+ * 
+ * @param id The unique identifier for the VCurveAngle.
+ * @param parentId The parent identifier for the VCurveAngle.
+ * @param baseCurveName The base name of the curve.
+ * @param spl A reference to the VSpline object.
+ * @param angle The angle type (StartAngle or EndAngle).
+ * @param segment The segment number of the spline.
+ */
 VCurveAngle::VCurveAngle(const quint32 &id, const quint32 &parentId, const QString &baseCurveName, const VSpline &spl,
                          CurveAngle angle, qint32 segment)
     :VCurveVariable(id, parentId)
@@ -103,12 +129,25 @@ VCurveAngle::VCurveAngle(const quint32 &id, const quint32 &parentId, const QStri
     }
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Copy constructor for VCurveAngle.
+ * 
+ * Initializes a new instance of VCurveAngle by copying the data from an existing VCurveAngle object.
+ * 
+ * @param var The VCurveAngle object to copy.
+ */
 VCurveAngle::VCurveAngle(const VCurveAngle &var)
     :VCurveVariable(var)
 {}
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Assignment operator for VCurveAngle.
+ * 
+ * Assigns the values from another VCurveAngle object to this instance.
+ * 
+ * @param var The VCurveAngle object to assign from.
+ * @return A reference to this VCurveAngle object.
+ */
 VCurveAngle &VCurveAngle::operator=(const VCurveAngle &var)
 {
     if ( &var == this )

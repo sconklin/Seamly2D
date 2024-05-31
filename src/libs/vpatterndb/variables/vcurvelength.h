@@ -63,6 +63,21 @@
 class VAbstractCurve;
 class VSpline;
 
+/**
+ * @brief Class representing the length of a curve.
+ * 
+ * The VCurveLength class is a specialized type of VCurveVariable that represents the length of a curve. It supports various constructors for different initialization scenarios, including copying from another VCurveLength object.
+ * 
+ * @details
+ * - VCurveLength(): Default constructor that initializes a VCurveLength object.
+ * - VCurveLength(const quint32 &id, const quint32 &parentId, const VAbstractCurve *curve, Unit patternUnit): Initializes a VCurveLength object with the given ID, parent ID, curve, and unit of measurement.
+ * - VCurveLength(const quint32 &id, const quint32 &parentId, const QString &baseCurveName, const VSpline &spl, Unit patternUnit, qint32 segment): Initializes a VCurveLength object with the given ID, parent ID, base curve name, spline, unit of measurement, and segment.
+ * - VCurveLength(const VCurveLength &var): Copy constructor that initializes a VCurveLength object from another VCurveLength object.
+ * - VCurveLength &operator=(const VCurveLength &var): Assignment operator that assigns values from another VCurveLength object to this object.
+ * - virtual ~VCurveLength(): Destructor that cleans up resources used by the VCurveLength object.
+ * 
+ * The class inherits from VCurveVariable and overrides necessary methods to handle curve length specific operations.
+ */
 class VCurveLength : public VCurveVariable
 {
 public:

@@ -61,6 +61,48 @@ enum class FormulaType : char{ToUser, FromUser};
 
 class VContainer;
 
+/**
+ * @brief The VFormula class represents a mathematical formula used in measurements.
+ * 
+ * This class provides functionalities to initialize, set, and evaluate a formula. It supports different operations such as 
+ * assignment, equality comparison, and translation of formulas. The formula can be represented as a string and evaluated 
+ * to obtain a numerical result.
+ * 
+ * @details
+ * - VFormula(): Default constructor.
+ * - VFormula(const QString &formula, const VContainer *container): Constructor initializing the formula and its container.
+ * - VFormula &operator=(const VFormula &formula): Assignment operator.
+ * - VFormula(const VFormula &formula): Copy constructor.
+ * - bool operator==(const VFormula &formula) const: Equality comparison operator.
+ * - bool operator!=(const VFormula &formula) const: Inequality comparison operator.
+ * 
+ * The class includes methods to get and set the formula, check for errors, and evaluate the formula:
+ * - QString GetFormula(FormulaType type = FormulaType::ToUser) const: Returns the formula string.
+ * - void SetFormula(const QString &value, FormulaType type = FormulaType::ToUser): Sets the formula string.
+ * - QString getStringValue() const: Gets the string value of the formula.
+ * - qreal getDoubleValue() const: Gets the double value of the formula.
+ * - bool getCheckZero() const: Gets the checkZero flag.
+ * - void setCheckZero(bool value): Sets the checkZero flag.
+ * - const VContainer *getData() const: Gets the data container.
+ * - void setData(const VContainer *value): Sets the data container.
+ * - quint32 getToolId() const: Gets the tool ID.
+ * - void setToolId(const quint32 &value): Sets the tool ID.
+ * - QString getPostfix() const: Gets the postfix string.
+ * - void setPostfix(const QString &value): Sets the postfix string.
+ * - bool error() const: Checks if there is an error in the formula.
+ * - static int FormulaTypeId(): Returns the formula type ID.
+ * - void Eval(): Evaluates the formula.
+ * 
+ * @note The private members of the class include:
+ * - QString formula: The formula string.
+ * - QString value: The evaluated value of the formula as a string.
+ * - bool checkZero: Flag to check if the result is zero.
+ * - const VContainer *data: Pointer to the container holding the data for evaluation.
+ * - quint32 toolId: ID of the tool associated with the formula.
+ * - QString postfix: Postfix string appended to the result.
+ * - bool _error: Flag indicating if there is an error in the formula.
+ * - qreal dValue: The evaluated value of the formula as a double.
+ */
 class VFormula
 {
     Q_DECLARE_TR_FUNCTIONS(VFormula)

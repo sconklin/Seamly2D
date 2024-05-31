@@ -61,6 +61,29 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_GCC("-Weffc++")
 QT_WARNING_DISABLE_GCC("-Wnon-virtual-dtor")
 
+/**
+ * @brief CustomVariableData class for managing variable data with shared ownership.
+ * 
+ * This class inherits from QSharedData and is used to manage the data associated with a custom variable.
+ * It supports shared ownership semantics, which allows multiple instances to share the same data efficiently.
+ * 
+ * @details
+ * The CustomVariableData class includes:
+ * - Default constructor to initialize an empty variable with default values.
+ * - Parameterized constructor to initialize the variable with specific data, index, formula, and status.
+ * - Copy constructor for creating a copy of an existing CustomVariableData instance.
+ * - Destructor to clean up resources.
+ * - Public attributes to store the variable's index, formula, formula validity status, and associated data container.
+ * - Private assignment operator declared as deleted to prevent assignment.
+ * 
+ * Attributes:
+ * - quint32 index: A unique identifier for each variable.
+ * - QString formula: A string representing the formula associated with the variable.
+ * - bool formulaOk: A boolean indicating whether the formula is valid.
+ * - VContainer data: A container object holding the data associated with the variable.
+ * 
+ * Note: The assignment operator is deleted to prevent copying of the instance using the assignment operator.
+ */
 class CustomVariableData : public QSharedData
 {
 public:

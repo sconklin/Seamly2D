@@ -330,7 +330,14 @@ const QString dartWidthShoulder_M = QStringLiteral("dart_width_shoulder"); // Q0
 const QString dartWidthBust_M     = QStringLiteral("dart_width_bust");     // Q02
 const QString dartWidthWaist_M    = QStringLiteral("dart_width_waist");    // Q03
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group A identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various height-related measurements. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for height-related measurements in group A.
+ */
 QStringList ListGroupA()
 {
     const QStringList list = QStringList() << height_M                     // A01
@@ -359,7 +366,14 @@ QStringList ListGroupA()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group B identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various width-related measurements. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for width-related measurements in group B.
+ */
 QStringList ListGroupB()
 {
     const QStringList list = QStringList() << widthShoulder_M      // B01
@@ -371,7 +385,14 @@ QStringList ListGroupB()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group C identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various indentation-related measurements. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for indentation-related measurements in group C.
+ */
 QStringList ListGroupC()
 {
     const QStringList list = QStringList() << indentNeckBack_M   // C01
@@ -381,7 +402,14 @@ QStringList ListGroupC()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group D identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various hand-related measurements. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for hand-related measurements in group D.
+ */
 QStringList ListGroupD()
 {
     const QStringList list = QStringList() << handPalmLength_M // D01
@@ -393,7 +421,14 @@ QStringList ListGroupD()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group E identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various foot-related measurements. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for foot-related measurements in group E.
+ */
 QStringList ListGroupE()
 {
     const QStringList list = QStringList() << footWidth_M       // E01
@@ -404,7 +439,14 @@ QStringList ListGroupE()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group F identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various head-related measurements. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for head-related measurements in group F.
+ */
 QStringList ListGroupF()
 {
     const QStringList list = QStringList() << headCirc_M	        // F01
@@ -417,7 +459,14 @@ QStringList ListGroupF()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group G identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various torso and neck-related measurements. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for torso and neck-related measurements in group G.
+ */
 QStringList ListGroupG()
 {
     const QStringList list = QStringList() << neckMidCirc_M         // G01
@@ -471,7 +520,14 @@ QStringList ListGroupG()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group H identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various torso-related measurements. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for torso-related measurements in group H.
+ */
 QStringList ListGroupH()
 {
     const QStringList list = QStringList() << neckFrontToWaistF_M              // H01
@@ -520,7 +576,14 @@ QStringList ListGroupH()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group I identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various shoulder and chest measurements. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for shoulder and chest measurements in group I.
+ */
 QStringList ListGroupI()
 {
     const QStringList list = QStringList() << shoulderLength_M                // I01
@@ -541,7 +604,14 @@ QStringList ListGroupI()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group J identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various bust point measurements. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for bust point measurements in group J.
+ */
 QStringList ListGroupJ()
 {
     const QStringList list = QStringList() << bustpointToBustpoint_M        // J01
@@ -558,7 +628,14 @@ QStringList ListGroupJ()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group K identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various measurements related to the neck, shoulder, and waist areas. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for measurements in group K.
+ */
 QStringList ListGroupK()
 {
     const QStringList list = QStringList() << shoulderTipToWaistFront_M       // K01
@@ -578,7 +655,14 @@ QStringList ListGroupK()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group L identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various measurements related to the arm, wrist, and shoulder areas. 
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for measurements in group L.
+ */
 QStringList ListGroupL()
 {
     const QStringList list = QStringList() << armShoulderTipToWristBent_M   // L01
@@ -607,7 +691,14 @@ QStringList ListGroupL()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group M identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various measurements related to the leg and waist areas.
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for measurements in group M.
+ */
 QStringList ListGroupM()
 {
     const QStringList list = QStringList() << legCrotchToFloor_M    // M01
@@ -628,7 +719,14 @@ QStringList ListGroupM()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group N identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various measurements related to the crotch and rise lengths.
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for measurements in group N.
+ */
 QStringList ListGroupN()
 {
     const QStringList list = QStringList() << crotchLength_M          // N01
@@ -643,7 +741,14 @@ QStringList ListGroupN()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group O identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various measurements related to the torso and arms.
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for measurements in group O.
+ */
 QStringList ListGroupO()
 {
     const QStringList list = QStringList() << neckBackToWaistFront_M 	         // O01
@@ -664,7 +769,14 @@ QStringList ListGroupO()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group P identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various measurements related to the bust, armfold, and shoulder.
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for measurements in group P.
+ */
 QStringList ListGroupP()
 {
     const QStringList list = QStringList() << neckBackToBustFront_M	                             // P01
@@ -683,7 +795,14 @@ QStringList ListGroupP()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement group Q identifiers.
+ * 
+ * This function creates and returns a QStringList containing identifiers for various dart width measurements.
+ * Each identifier corresponds to a specific measurement used in the system.
+ * 
+ * @return QStringList containing the identifiers for measurements in group Q.
+ */
 QStringList ListGroupQ()
 {
     const QStringList list = QStringList() << dartWidthShoulder_M // Q01
@@ -693,7 +812,22 @@ QStringList ListGroupQ()
     return list;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Generates a list of measurement numbers.
+ * 
+ * This function takes a pointer to VTranslateMeasurements and a QStringList of measurement identifiers,
+ * and returns a QStringList of corresponding measurement numbers.
+ * 
+ * @details
+ * The function iterates through the provided list of measurement identifiers and uses the VTranslateMeasurements
+ * object to retrieve the measurement number for each identifier. It then appends each retrieved measurement number
+ * to a QStringList which is returned at the end.
+ * 
+ * @param trM Pointer to VTranslateMeasurements object, used to retrieve measurement numbers.
+ * @param listMeasurements QStringList containing identifiers for measurements.
+ * 
+ * @return QStringList containing the corresponding measurement numbers.
+ */
 QStringList ListNumbers(const VTranslateMeasurements *trM, const QStringList &listMeasurements)
 {
     SCASSERT(trM != nullptr)
@@ -706,7 +840,23 @@ QStringList ListNumbers(const VTranslateMeasurements *trM, const QStringList &li
     return numbers;
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Maps measurement numbers to corresponding diagram identifiers.
+ * 
+ * This function takes a pointer to VTranslateMeasurements and a measurement number as input and returns a QString
+ * representing the diagram identifier associated with the given measurement number.
+ * 
+ * @details
+ * The function first checks which group the measurement number belongs to by iterating through each group (A to Q)
+ * and finding the index of the number in the corresponding list. Based on the index, it returns the appropriate
+ * diagram identifier as a QString. If the measurement number does not match any group, an empty QString is returned.
+ * 
+ * @param trM Pointer to VTranslateMeasurements object, used to retrieve measurement numbers for comparison.
+ * @param number QString representing the measurement number to be mapped.
+ * 
+ * @return QString representing the corresponding diagram identifier. If the measurement number does not match any 
+ *         group, an empty QString is returned.
+ */
 QString MapDiagrams(const VTranslateMeasurements *trM, const QString &number)
 {
     switch (ListNumbers(trM, ListGroupA()).indexOf(number))
@@ -1181,7 +1331,18 @@ QString MapDiagrams(const VTranslateMeasurements *trM, const QString &number)
     return QString();
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+/**
+ * @brief Retrieves a list of all group names.
+ * 
+ * This function compiles and returns a QStringList containing the names of all measurement groups (A to Q). Each group's
+ * list of names is appended to the originalNames list.
+ * 
+ * @details
+ * The function calls ListGroupA(), ListGroupB(), ..., ListGroupQ() to gather all measurement names from each group and
+ * concatenates them into a single QStringList. This provides a comprehensive list of all measurement names across all groups.
+ * 
+ * @return QStringList containing the names of all measurements from all groups (A to Q).
+ */
 QStringList AllGroupNames()
 {
     const QStringList originalNames = QStringList() << ListGroupA()

@@ -63,6 +63,26 @@ enum class CurveCLength : char { C1, C2 };
 class VAbstractBezier;
 class VSpline;
 
+/**
+ * @brief Class representing the length of a curve segment.
+ * 
+ * The VCurveCLength class inherits from VCurveVariable and is used to store and manipulate the length of a curve segment.
+ * This class includes multiple constructors to initialize instances with different sets of parameters, 
+ * such as a curve, segment, and measurement unit. It also provides a copy constructor and an assignment operator 
+ * for copying instances. The destructor ensures proper cleanup of resources used by the object.
+ * 
+ * The key functionalities of this class include:
+ * - Storing the unique identifier of the curve length variable.
+ * - Storing the unique identifier of the parent of the curve length variable.
+ * - Storing and managing the length of various curve types, including Bezier curves and splines.
+ * - Supporting both initialization with specific curve segments and general curve lengths.
+ * 
+ * The constructors enable the creation of VCurveCLength objects with either a VAbstractBezier curve or a VSpline object, 
+ * along with specifying the type of curve length and measurement unit.
+ * 
+ * The class also provides an assignment operator for assigning values from another VCurveCLength object, ensuring 
+ * proper copying of the curve length properties.
+ */
 class VCurveCLength : public VCurveVariable
 {
 public:
