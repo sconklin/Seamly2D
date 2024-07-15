@@ -98,34 +98,34 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d5/d73/color__combobox_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="821.5,-0.5 821.5,-30.5 946.5,-30.5 946.5,-0.5 821.5,-0.5"/>
-<text text-anchor="start" x="829.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/libs/vwidgets/color</text>
-<text text-anchor="middle" x="884" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_combobox.cpp</text>
+<g id="a_node7"><a xlink:href="../../d7/d1b/pen__toolbar_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="821.5,-0.5 821.5,-30.5 940.5,-30.5 940.5,-0.5 821.5,-0.5"/>
+<text text-anchor="start" x="829.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/libs/vwidgets/pen</text>
+<text text-anchor="middle" x="881" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_toolbar.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M709.71,-64.73C744.8,-55.02 795.61,-40.96 833.33,-30.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="708.51,-61.43 699.8,-67.48 710.38,-68.18 708.51,-61.43"/>
+<path fill="none" stroke="midnightblue" d="M709.14,-64.73C743.74,-55.02 793.85,-40.96 831.04,-30.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="708.06,-61.4 699.37,-67.48 709.95,-68.14 708.06,-61.4"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="../../d7/d1b/pen__toolbar_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="964.5,-0.5 964.5,-30.5 1083.5,-30.5 1083.5,-0.5 964.5,-0.5"/>
-<text text-anchor="start" x="972.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/libs/vwidgets/pen</text>
-<text text-anchor="middle" x="1024" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_toolbar.cpp</text>
+<g id="a_node8"><a xlink:href="../../d5/d73/color__combobox_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="958.5,-0.5 958.5,-30.5 1083.5,-30.5 1083.5,-0.5 958.5,-0.5"/>
+<text text-anchor="start" x="966.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/libs/vwidgets/color</text>
+<text text-anchor="middle" x="1021" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_combobox.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M739.82,-65.99C798.02,-57.51 882.55,-44.58 956,-31 958.73,-30.5 961.52,-29.96 964.33,-29.42"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="739.03,-62.57 729.63,-67.47 740.03,-69.5 739.03,-62.57"/>
+<path fill="none" stroke="midnightblue" d="M736.68,-65.99C793.68,-57.36 877.32,-44.23 950,-31 952.72,-30.5 955.5,-29.99 958.31,-29.45"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="736.07,-62.54 726.71,-67.49 737.12,-69.46 736.07,-62.54"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
