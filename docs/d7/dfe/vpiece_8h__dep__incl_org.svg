@@ -85,10 +85,10 @@
 <!-- Node71 -->
 <g id="node42" class="node">
 <title>Node71</title>
-<g id="a_node42"><a xlink:href="../../da/d10/deletepiece_8h.html" target="_top" xlink:title=" ">
+<g id="a_node42"><a xlink:href="../../d2/de0/addpiece_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="3310.5,-212.5 3310.5,-242.5 3475.5,-242.5 3475.5,-212.5 3310.5,-212.5"/>
 <text text-anchor="start" x="3318.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/libs/vtools/undocommands</text>
-<text text-anchor="middle" x="3393" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00">/deletepiece.h</text>
+<text text-anchor="middle" x="3393" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00">/addpiece.h</text>
 </a>
 </g>
 </g>
@@ -101,10 +101,10 @@
 <!-- Node74 -->
 <g id="node45" class="node">
 <title>Node74</title>
-<g id="a_node45"><a xlink:href="../../d2/de0/addpiece_8h.html" target="_top" xlink:title=" ">
+<g id="a_node45"><a xlink:href="../../da/d10/deletepiece_8h.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="3493.5,-212.5 3493.5,-242.5 3658.5,-242.5 3658.5,-212.5 3493.5,-212.5"/>
 <text text-anchor="start" x="3501.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/libs/vtools/undocommands</text>
-<text text-anchor="middle" x="3576" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00">/addpiece.h</text>
+<text text-anchor="middle" x="3576" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00">/deletepiece.h</text>
 </a>
 </g>
 </g>
@@ -224,10 +224,10 @@
 <!-- Node45 -->
 <g id="node31" class="node">
 <title>Node45</title>
-<g id="a_node31"><a xlink:href="../../db/d11/vformula_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_node31"><a xlink:href="../../d6/d46/vcontainer_8cpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="3980.5,-67.5 3980.5,-97.5 4087.5,-97.5 4087.5,-67.5 3980.5,-67.5"/>
 <text text-anchor="start" x="3988.5" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/libs/vpatterndb</text>
-<text text-anchor="middle" x="4034" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/vformula.cpp</text>
+<text text-anchor="middle" x="4034" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/vcontainer.cpp</text>
 </a>
 </g>
 </g>
@@ -240,10 +240,10 @@
 <!-- Node46 -->
 <g id="node32" class="node">
 <title>Node46</title>
-<g id="a_node32"><a xlink:href="../../d6/d46/vcontainer_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_node32"><a xlink:href="../../db/d11/vformula_8cpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="4105.5,-67.5 4105.5,-97.5 4212.5,-97.5 4212.5,-67.5 4105.5,-67.5"/>
 <text text-anchor="start" x="4113.5" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/libs/vpatterndb</text>
-<text text-anchor="middle" x="4159" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/vcontainer.cpp</text>
+<text text-anchor="middle" x="4159" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/vformula.cpp</text>
 </a>
 </g>
 </g>
@@ -270,7 +270,7 @@
 <polygon fill="midnightblue" stroke="midnightblue" points="1597.89,-207.55 1607.33,-212.36 1602.95,-202.71 1597.89,-207.55"/>
 </g>
 <!-- Node2&#45;&gt;Node49 -->
-<g id="edge49" class="edge">
+<g id="edge48" class="edge">
 <title>Node2&#45;&gt;Node49</title>
 <path fill="none" stroke="midnightblue" d="M1685.63,-226.72C1927.96,-227.2 2785.03,-225.36 2896,-176 2919.83,-165.4 2913.1,-144.46 2937,-134 3067.84,-76.71 4080.35,-116.36 4222,-98 4224.74,-97.64 4227.54,-97.22 4230.35,-96.74"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1685.58,-223.22 1675.58,-226.7 1685.57,-230.22 1685.58,-223.22"/>
@@ -335,7 +335,7 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node68 -->
-<g id="edge48" class="edge">
+<g id="edge49" class="edge">
 <title>Node2&#45;&gt;Node68</title>
 <path fill="none" stroke="midnightblue" d="M1558.03,-223.91C1461.79,-219.15 1274.34,-206.55 1118,-176 1109.91,-174.42 1101.39,-172.3 1093.23,-170.02"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1558.03,-227.41 1568.18,-224.4 1558.36,-220.42 1558.03,-227.41"/>
@@ -792,10 +792,10 @@
 <!-- Node73 -->
 <g id="node44" class="node">
 <title>Node73</title>
-<g id="a_node44"><a xlink:href="../../da/d5c/deletepiece_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_node44"><a xlink:href="../../dd/d33/addpiece_8cpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="3310.5,-140 3310.5,-170 3475.5,-170 3475.5,-140 3310.5,-140"/>
 <text text-anchor="start" x="3318.5" y="-158" font-family="Helvetica,sans-Serif" font-size="10.00">src/libs/vtools/undocommands</text>
-<text text-anchor="middle" x="3393" y="-147" font-family="Helvetica,sans-Serif" font-size="10.00">/deletepiece.cpp</text>
+<text text-anchor="middle" x="3393" y="-147" font-family="Helvetica,sans-Serif" font-size="10.00">/addpiece.cpp</text>
 </a>
 </g>
 </g>
@@ -814,10 +814,10 @@
 <!-- Node75 -->
 <g id="node46" class="node">
 <title>Node75</title>
-<g id="a_node46"><a xlink:href="../../dd/d33/addpiece_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_node46"><a xlink:href="../../da/d5c/deletepiece_8cpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="3493.5,-140 3493.5,-170 3658.5,-170 3658.5,-140 3493.5,-140"/>
 <text text-anchor="start" x="3501.5" y="-158" font-family="Helvetica,sans-Serif" font-size="10.00">src/libs/vtools/undocommands</text>
-<text text-anchor="middle" x="3576" y="-147" font-family="Helvetica,sans-Serif" font-size="10.00">/addpiece.cpp</text>
+<text text-anchor="middle" x="3576" y="-147" font-family="Helvetica,sans-Serif" font-size="10.00">/deletepiece.cpp</text>
 </a>
 </g>
 </g>
